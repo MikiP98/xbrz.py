@@ -35,3 +35,9 @@ jobs:
 
     - name: Build wheel package
       run: poetry build
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: ${{ matrix.os }}-py${{ matrix.python-version }}
+        path: xbrz_py-0.1.0-py3-none-any.whl
