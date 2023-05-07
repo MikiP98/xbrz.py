@@ -9,7 +9,7 @@ description = "ctypes-based binding library for the xBRZ pixel-art image scaling
 authors = ["iomintz <io@mintz.cc>"]
 license = "AGPL-3.0-or-later"
 readme = "README.md"
-packages = [{include = "xbrz"}]
+packages = [{include = "xbrz.py"}]
 
 [tool.poetry.dependencies]
 python = "^3.6"
