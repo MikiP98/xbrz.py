@@ -36,10 +36,6 @@ jobs:
     - name: Build wheel package
       run: poetry build
 
-    - name: Install External Dependencies
-      run: |
-        ls dist
-
     - name: Upload artifact
       uses: actions/upload-artifact@v3
       with:
