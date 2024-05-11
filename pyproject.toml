@@ -1,0 +1,15 @@
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "xbrz-py"
+version = "0.1.0"
+description = "ctypes-based binding library for the xBRZ pixel-art image scaling algorithm"
+authors = ["iomintz <io@mintz.cc>"]
+license = "AGPL-3.0-or-later"
+readme = "README.md"
+packages = [{include = "xbrz.py"}]
+
+[tool.poetry.dependencies]
+python = "^3.7"
